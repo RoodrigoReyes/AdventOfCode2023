@@ -5,19 +5,7 @@ def read_file_lines(file_path):
 
 def main():
     # Main script
-    input = read_file_lines("Input/day4_1.txt")
-    list_points = []
-    for card, line in enumerate(input):
-        winning_numbers = line[9:39].split()
-        my_numbers = line[41:].split()
-        matches = set(winning_numbers).intersection(set(my_numbers))
-        if matches:
-            len_matches = len(matches)
-            # print("Carta", card + 1, "Match:", len_matches)
-            points = 2 ** (len_matches - 1)
-            list_points.append(points)
-
-    return sum(list_points)
+    pass
 
 
 if __name__ == "__main__":
