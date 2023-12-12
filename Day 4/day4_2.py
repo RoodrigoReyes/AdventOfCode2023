@@ -8,7 +8,7 @@ def read_file_lines(file_path):
 
 def main():
     # Main script
-    input = read_file_lines("Input/day4_2.txt")
+    input = read_file_lines("Input/day4.txt")
 
     scratchcards = defaultdict(int)
     temp = Counter()

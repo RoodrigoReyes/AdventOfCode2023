@@ -5,7 +5,7 @@ def read_file_lines(file_path):
 
 def main():
     # Main script
-    input = read_file_lines("Input/day4_1.txt")
+    input = read_file_lines("Input/day4.txt")
     list_points = []
     for card, line in enumerate(input):
         winning_numbers = line[9:39].split()
