@@ -59,7 +59,7 @@ def obtener_elementos_adyacentes(matriz, nums, x, y):
 
 def main():
     # Main script
-    file_lines = read_file_lines("Input/day3_1.txt")
+    file_lines = read_file_lines("Input/day3.txt")
     nested_lines = nest_input_lines(file_lines)
     nums, syms = get_positions(file_lines)
 

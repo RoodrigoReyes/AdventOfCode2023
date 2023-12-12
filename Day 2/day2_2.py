@@ -25,7 +25,7 @@ def process_row(row):
 
 
 def main():
-    input = get_input("Input\day3.txt")
+    input = get_input("Input\day2.txt")
     sum_ = 0
     for row in input:
         values = process_row(row)
