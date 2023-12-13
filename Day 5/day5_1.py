@@ -5,7 +5,6 @@ def read_file_lines(file_path):
 
 def main():
     # Main script
-    result = []
     input = read_file_lines("Input/day5.txt")
     seeds, *blocks = input
 
@@ -15,10 +14,9 @@ def main():
         ranges = []
         for line in block.splitlines()[1:]:
             # a, b, c = list(map(int, line.split()))
-            # print(line)
             ranges.append(list(map(int, line.split())))
         new = []
-        print(seeds)
+        # print(seeds)
         for x in seeds:
             for a, b, c in ranges:
                 if x in range(b, b + c):
