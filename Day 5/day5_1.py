@@ -15,7 +15,7 @@ def main():
         ranges = []
         for line in block.splitlines()[1:]:
             # a, b, c = list(map(int, line.split()))
-            print(line)
+            # print(line)
             ranges.append(list(map(int, line.split())))
         new = []
         print(seeds)
