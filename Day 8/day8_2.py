@@ -26,14 +26,13 @@ def main():
 
     all_steps = []
     for node in inits_nodes:
-        cur = node
         count = 0
-        while not cur.endswith("Z"):
+        while not node.endswith("Z"):
             for direction in directions:
                 if direction == "L":
-                    cur = dict_nodes[cur][0]
+                    node = dict_nodes[node][0]
                 elif direction == "R":
-                    cur = dict_nodes[cur][1]
+                    node = dict_nodes[node][1]
                 count += 1
 
         all_steps.append(count)
