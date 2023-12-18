@@ -16,8 +16,6 @@ def read_file_lines(file_path):
 
 
 def main():
-    node = "AAA"
-
     directions, dict_nodes = read_file_lines("Input/day8.txt")
 
     inits_nodes = [node for node in dict_nodes.keys() if node.endswith("A")]
