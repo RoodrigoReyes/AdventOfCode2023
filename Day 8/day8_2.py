@@ -10,9 +10,7 @@ def read_file_lines(file_path):
 
     directions = lines[0]
 
-    dict_nodes = {
-        line.split()[0]: re.findall("[a-zA-Z]+", line)[1:] for line in lines[1:]
-    }
+    dict_nodes = {line.split()[0]: re.findall("[a-zA-Z]+", line)[1:] for line in lines[1:]}  # fmt: skip
 
     return directions, dict_nodes
 
