@@ -35,6 +35,7 @@ def main():
                 elif direction == "R":
                     cur = dict_nodes[cur][1]
                 count += 1
+
         all_steps.append(count)
 
     return math.lcm(*all_steps)
